@@ -18,6 +18,13 @@ def get_ports():
     max_port = min(65535, int(get_config('max-port', 65535)))
     return min_port, max_port
 
+def get_min_port():
+    min_port = max(1, int(get_config('min-port', 49152)))
+    return min_port
+
+def get_max_port():
+    max_port = min(65535, int(get_config('max-port', 65535)))
+    return max_port
 
 def get_webserver_port():
     port = min(65535, max(1, int(get_config('webserver.port', 80))))
