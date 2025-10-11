@@ -14,7 +14,7 @@ setup(
         'fastapi==0.116.1',
         'PyYAML==6.0.2',
         'uvicorn==0.35.0',
-        'pydantic==1.10.21',
+        'pydantic<=2',
         'python-multipart==0.0.20',
     ],
     scripts=[

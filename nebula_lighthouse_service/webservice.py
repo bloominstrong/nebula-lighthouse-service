@@ -10,7 +10,7 @@ from typing import Tuple
 from pathlib import Path
 
 import importlib.resources
-from pydantic import BaseModel, validator
+from pydantic.v1 import BaseModel, validator
 import uvicorn as uvicorn
 from fastapi import FastAPI, File
 from starlette.responses import HTMLResponse
